@@ -25,10 +25,4 @@ def send_order():
 def fetch_order():
     return jsonify(load_order())
 
-@app.route('/ping', methods=['GET'])
-def ping():
-    return jsonify({'status': 'ok'})
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=10000)
-
+# 🔁 NON usare `app.run()` qui
